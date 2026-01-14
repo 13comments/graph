@@ -36,6 +36,22 @@ body {
   height: 360px;
 }
 
+.chart-tools {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.chart-tools button {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  background: #111c3a;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .indicator dl {
   margin: 0;
   display: grid;

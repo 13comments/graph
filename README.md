@@ -8,7 +8,7 @@ Local stock lab demo using Axum, DuckDB, and KLineChart.
 cargo run
 ```
 
-Open <http://localhost:3000>.
+Open <http://localhost:8000>.
 
 ## Data
 

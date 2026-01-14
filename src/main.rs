@@ -85,7 +85,7 @@ async fn main() -> anyhow::Result<()> {
         .nest_service("/", ServeDir::new("static"))
         .with_state(state);
 
-    let addr: SocketAddr = "0.0.0.0:3000".parse()?;
+    let addr: SocketAddr = "0.0.0.0:8000".parse()?;
     tracing::info!("listening on {addr}");
     axum::serve(tokio::net::TcpListener::bind(addr).await?, app).await?;
     Ok(())
