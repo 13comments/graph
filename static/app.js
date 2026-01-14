@@ -7,7 +7,6 @@ const indicatorEl = document.getElementById('indicator');
 const fibEl = document.getElementById('fib');
 const fibStartInput = document.getElementById('fib-start');
 const fibEndInput = document.getElementById('fib-end');
-const drawLineButton = document.getElementById('draw-line');
 
 function formatNumber(value) {
   if (value === null || value === undefined) {
@@ -94,12 +93,5 @@ fibStartInput.value = '2024-02-01 00:00:00';
 
 const fibRefreshButton = document.getElementById('fib-refresh');
 fibRefreshButton.addEventListener('click', loadFib);
-drawLineButton.addEventListener('click', () => {
-  chart.createOverlay({
-    name: 'segment',
-    totalStep: 2,
-    lock: false,
-  });
-});
 
 init();
