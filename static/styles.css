@@ -1,0 +1,109 @@
+:root {
+  color-scheme: light;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f6f7fb;
+  color: #202534;
+}
+
+body {
+  margin: 0;
+  padding: 32px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(23, 30, 54, 0.08);
+}
+
+.chart {
+  height: 360px;
+}
+
+.chart-tools {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.chart-tools button {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  background: #111c3a;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.indicator dl {
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.indicator div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e4e7f1;
+  padding-bottom: 8px;
+}
+
+.indicator dt {
+  font-weight: 600;
+}
+
+.fib-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.fib-controls label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 6px;
+}
+
+.fib-controls input {
+  border-radius: 8px;
+  border: 1px solid #c9d1e2;
+  padding: 8px;
+}
+
+.fib-controls button {
+  align-self: flex-start;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  background: #2c5cff;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fib ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 8px;
+}

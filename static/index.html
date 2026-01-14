@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Lab (Axum + DuckDB)</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://unpkg.com/klinecharts@9.7.0/dist/klinecharts.min.js"></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Stock Lab</h1>
+      <p>Axum + DuckDB + KLineChart for local charting.</p>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <h2>Candles</h2>
+        <div class="chart-tools">
+          <button id="draw-line">Draw line</button>
+        </div>
+        <div id="chart" class="chart"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Indicator Snapshot</h2>
+        <div id="indicator" class="indicator"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Fibonacci Levels</h2>
+        <div class="fib-controls">
+          <label>
+            Start
+            <input type="text" id="fib-start" placeholder="YYYY-MM-DD HH:MM:SS" />
+          </label>
+          <label>
+            End
+            <input type="text" id="fib-end" placeholder="YYYY-MM-DD HH:MM:SS" />
+          </label>
+          <button id="fib-refresh">Refresh</button>
+        </div>
+        <div id="fib" class="fib"></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
